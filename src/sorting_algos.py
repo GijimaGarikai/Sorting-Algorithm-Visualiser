@@ -81,7 +81,7 @@ class SortingAlgos:
         pivot = arr[high]
         i = low - 1
         for j in range(low, high):
-            if arr[j] < pivot:
+            if arr[j] <= pivot:
                 i += 1
                 arr[i], arr[j] = arr[j], arr[i]
                 self.visualiser.draw_bars(arr)  # Draw bars after each swap
